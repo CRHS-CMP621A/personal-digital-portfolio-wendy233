@@ -16,53 +16,75 @@
       <h1>Wendy Cui</h1>
     </header>
 
-    <nav class="navlink">
-      <a class="navlink1" href="#projects">My Projects</a>
-      <a class="navlink2" href="#aboutme">About Me</a>
-      <a class="navlink3" href="#contactme">Contact Me</a>
-    </nav>
+    <ul id="menu">
+      <li class="menu"><a href="#aboutme"> About Me </a></li>
+      <li class="dropdown">
+        <a href="#project" class="dropbtn">My Projects  <!-- drop down --></a>
+        <div class="dropdown-content">
+          <a href="#project1">Computer</a>
+          <a href="#project2">Robot</a>
+          <a href="#project3">Craft</a>
+        </div>
+      </li>
+      <li class="menu"><a href="#contactme"> Contact Me </a></li>
+    </ul>  <!-- end of navigation bar -->
 
     <div id="projects">
-      <section class="project1">
+      <section id="project1">
+        <h3>Computer</h3>
+
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+          when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+          It has survived not only five centuries, but also the leap into electronic typesetting, 
+          remaining essentially unchanged. 
+          It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+          and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+
+        <a href="projects/computer.html">...more</a>
+      </section>
+
+      <section class="project1Pic">
+        <img src="image/download.jfif" alt="robot">
+      </section>
+
+      <section class="project2Pic">
+        <img src="image/download (1).jfif">
+      </section>
+
+      <section id="project2">
         <h3>Robot</h3>
 
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
           Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
           when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-          It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+          It has survived not only five centuries, but also the leap into electronic typesetting, 
+          remaining essentially unchanged. 
           It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
           and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
         </p>
 
-        <a href="robot.html">...more</a>
+        <a href="projects/robot.html">...more</a>
       </section>
 
-      <section class="project2">
-        <h3>Drafting</h3>
-
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-          when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-          It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-          It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
-          and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-        </p>
-
-        <a href="draft.html">...more</a>
-      </section>
-
-      <section class="project3">
-        <h3>Tutoring</h3>
+      <section id="project3">
+        <h3>Craft</h3>
       
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
           Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
           when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-          It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+          It has survived not only five centuries, but also the leap into electronic typesetting, 
+          remaining essentially unchanged. 
           It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
           and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
         </p>
       
-        <a href="tutor.html">...more</a>
+        <a href="projects/craft.html">...more</a>
+      </section>
+
+      <section class="project3Pic">
+        <img src="image/download (2).jfif">
       </section>
     </div>
 
