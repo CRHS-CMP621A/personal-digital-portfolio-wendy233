@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!--Student Name: Wendy Cui
+        Date: 6/6/2022-->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <!-- STYLES -->
@@ -10,5 +12,147 @@
     <title>About Me</title>
   </head>
 
-  <body></body>
+  <body>
+    
+    <header id="header">
+      <h1>Wendy Cui</h1>
+    </header>
+
+    <nav class="navbar">
+      <a href="#aboutme">About Me</a>
+      <div class="dropdown">
+        <p class="dropbtn">Projects
+          <i class="fa fa-caret-down"></i>
+        </p>
+        <div class="dropdown-content">
+          <a href="#project1">Computer</a>
+          <a href="#project2">Robot & Drafting</a>
+          <a href="#project3">Craft</a>
+        </div>
+      </div> 
+      <a href="#contactme">Contact Me</a>
+    </nav><!-- end of navigation bar -->
+
+    <div class="projects">
+      <section id="project1">
+        <h3>Computer</h3> 
+        <a href="#header" class="backTop">Back to TOP</a> 
+
+        <p>
+          Computers have become an important part of our lives. <br>
+          I am excited that I took computer courses in highschool.<br>
+          <br> 
+          <b>What have I learned?</b>
+          <ul>
+            <li>Python</li>
+            <li>Arduino</li>
+            <li>HTML, CSS, and Javascript</li>
+          </ul>
+        </p>
+
+        <a class="more"
+          href="computer.html" 
+          target="_blank">See Projects
+        </a>
+      </section>
+
+      <ul class="projectPic">
+        <li><img src="image/logo of python.jfif" alt="Logo of Python" width="160"></li>
+        <li><img src="image/arduino.png" alt="Logo of Arduino" width="160"></li>
+        <li><img src="image/html_css_js.png" alt="Logo of HTML, CSS, and Javascript" width="280"></li>
+      </ul>
+  
+
+      <ul class="projectPic">
+        <li><img src="image/AUTOCAD_logo.png" alt="Logo of AUTOCAD" width="330"></li>
+        <li><img src="image/acad.png" alt="Projects I did in AUTOCAD" width="330"></li>
+      </ul>
+
+      <section id="project2">
+        <h3>Robotics & Drafting</h3>
+        <a href="#header" class="backTop">Back to TOP</a>
+
+        <p>
+           "Robotics" and "Design Technology" are the two courses that have influenced my decision on future career - Engineering.<br>
+           I love the feeling when problems are solved. <br>
+           <br>
+           In robotics, I tried <b>VEX</b> and <b>Arduino</b>. <br>
+           In design technology, I developed basic skills on drafting.
+        </p>
+
+        <a class="more"
+          href="robot.html" 
+          target="_blank">See Projects
+        </a>
+      </section>
+
+      <section id="project3">
+        <h3>Craft</h3>
+        <a href="#header" class="backTop">Back to TOP</a>
+      
+        <p>
+          I love crafting. Crafting helps me relax.<br>
+          The crafts I have made include:
+          <ul>
+            <li>Crochet</li>
+            <li>Clay</li>
+            <li>Origami</li>
+            ...
+          </ul>
+        </p>
+      
+        <a class="more"
+          href="craft.html" 
+          target="_blank">See Projects
+        </a>
+
+      </section>
+
+      <ul class="projectPic">
+        <li><img src="image/craft.png" width="330" alt="image of a card with 'Craft' on it"></li>
+      </ul>
+    </div>
+
+
+    <h2 class="aboutme">About me</h2>
+    <article id="aboutme">
+      <img src="image/me.jpg" width="450" alt="an image of Wendy Cui ">
+      
+      <div class="aboutmeInfo">
+        <p>Name: Ziwen Cui (Wendy)</p>
+        <br>
+        <p>Age: 18</p>
+        <br>
+        <p>Hobby: Visiting different places</p>
+        <br>
+        <p>Education: I am going to graduate from Charlottetown Rural High School.</p>
+        <br>
+        <a href="pdf/Wendy Cui - Housing Assignment.pdf" class="more" target="_blank">"Resume"</a>
+        <!--I cannot find my resume all of a studden. 
+          So I attrached another project for now. I'll replease it with my resume as soon as I find my resume-->
+      </div>
+    </article>
+    <br>
+    <br>
+  </body>
+
+  <footer id="contactme">
+   <h2>Contact me</h2>
+   <ul class="footer_container">
+    <li>
+      <img src="image/facebook_logo.png" width="22px" alt="logo of Facebook"> 
+      <a href="https://www.facebook.com/" class="socialM">Facebook</a>
+    </li>
+    
+    <li>
+      <img src="image/ins_logo.jfif" width="22px" alt="logo of Instagram"> 
+      <a href="https://www.instagram.com/" class="socialM">Instagram</a>
+    </li>
+    
+    <li>
+      <img src="image/email_logo.png" width="22px" alt="logo of email"> 
+      <a href="mailto:wendycui2004@outlook.com" class="socialM">Send email</a>
+    </li>
+  </ul>
+  </footer>
 </html>

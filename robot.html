@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <!--Student Name: Wendy Cui
+        Date: 6/6/2022-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <!-- Title -->
+    <title>Robot page</title>
+    <style>
+      html {
+        width: 100%;
+        background-color: #ccd4c46f;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+      }
+      .back{
+        font-size: 15px;
+        box-shadow: inset 0 0 0 0 #426d54;
+        color: #426d54;
+        margin: 0 -0.25rem;
+        padding: 0 0.25rem;
+        transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        text-decoration: none;
+      }
+      .back:visited {
+        color: brown;
+      }
+      .back:hover {
+        box-shadow: inset 150px 0 0 0 #426d54;
+        color: white;
+      }
+      .back:active {
+        color: pink;
+      }
+
+      .robotPic:hover {
+        box-shadow: inset 150px 0 0 0 #426d54;
+        width: 55%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Robot</h1>
+    <a href="index.html" class="back">Back to Portfolio</a>
+
+    <article class="container">
+
+      <div>
+        <h2>VEX </h2>
+        <a href="pdf/Design process - battery holder.pdf">
+          <img src="image/robot_project.jpg" width="50%" class="robotPic" alt="project about 3D printing battery holder">
+        </a>
+      </div>
+
+      <div>
+        <h2>Arduino</h2>
+        <a href="pdf/Wendy Cui - Situation-Problem Statement.pdf">
+          <img src="image/arduino_R.png" width="50%" class="robotPic" alt="arduino project on anneal">
+        </a>
+      </div>
+
+      <div>
+        <h2>Other:</h2>
+        <img src="image/acad_project.png" width="200" height="120" alt="AUTOCAD drawing">
+
+        <img src="image/Applied_sci_projct.jpg" width="200" alt="sketchup drawing">
+        </div>
+    </article>
+  </body>
+</html>
