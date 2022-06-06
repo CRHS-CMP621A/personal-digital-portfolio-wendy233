@@ -1,9 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+        <!--Student Name: Wendy Cui
+        Date: 6/6/2022-->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <!-- STYLES -->
+    <style>
+      html {
+        width: 100%;
+        background-color: #ccd4c46f;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+
+      .back{
+        font-size: 15px;
+        box-shadow: inset 0 0 0 0 #426d54;
+        color: #426d54;
+        margin: 0 -0.25rem;
+        padding: 0 0.25rem;
+        transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        text-decoration: none;
+      }
+      .back:visited {
+        color: brown;
+      }
+      .back:hover {
+        box-shadow: inset 150px 0 0 0 #426d54;
+        color: white;
+      }
+      .back:active {
+        color: pink;
+      }
+    </style>
     <!--<link href="style.css" rel="stylesheet" />-->
 
     <!-- Title -->
@@ -11,7 +45,40 @@
   </head>
 
   <body>
-    <h1>Computer</h1>
-    <a href="index.html">back</a>
+    <header>
+      <h1>Computer</h1>
+      <a href="index.html" class="back">Back to Portfolio</a>
+    </header>
+
+    <article class="container">
+      <div>
+        <h2>Python</h2>
+        <img src="image/py_code.jfif" width="30%" alt="diagram of python code"><br>
+        Try one of my projects: 
+        <a href="https://replit.com/@WendyCui/L6-Project-Mad-Libs-1#main.py" class="back">
+          Wendy - Mad Libs
+        </a>
+      </div>
+
+      <div>
+        <h2>Arduino</h2>
+        <video width="50%" controls>
+          <source src="image/IMG_5273.MOV" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+      </div>
+      
+      <div>
+        <h2>HTML, CSS, Javascript</h2>
+        <img src="image/css_js_html_code.jfif" width="50%" alt="diagram of HTML, CSS, Javascript"><br>
+        Try projects: 
+        <a href="https://replit.com/@WendyCui/JS4-Event-Listeners-Balloon-Pop#index.html" class="back">
+          Balloon Pop
+        </a> 、
+        <a href="https://replit.com/@WendyCui/DOM-GuessMyNumber-START#script.js" class="back">
+          Guess My Number
+        </a>
+      </div>  
+    </article>
   </body>
 </html>

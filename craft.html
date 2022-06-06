@@ -1,17 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+        <!--Student Name: Wendy Cui
+        Date: 6/6/2022-->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <!-- STYLES -->
-    <!--<link href="style.css" rel="stylesheet" />-->
 
     <!-- Title -->
-    <title>Computer page</title>
+    <title>Crafting page</title>
+    <style>
+      html {
+        width: 100%;
+        background-color: #ccd4c46f;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      .back{
+        font-size: 15px;
+        box-shadow: inset 0 0 0 0 #426d54;
+        color: #426d54;
+        margin: 0 -0.25rem;
+        padding: 0 0.25rem;
+        transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        text-decoration: none;
+      }
+      .back:visited {
+        color: brown;
+      }
+      .back:hover {
+        box-shadow: inset 150px 0 0 0 #426d54;
+        color: white;
+      }
+      .back:active {
+        color: pink;
+      }
+
+      .crochetPdf:hover {
+        box-shadow: inset 150px 0 0 0 #426d54;
+        width: 55%;
+      }
+    </style>
   </head>
 
   <body>
     <h1>Crafting</h1>
-    <a href="index.html">back</a>
+    <a href="index.html" class="back">Back to Portfolio</a>
+
+    <article class="container">
+
+      <div>
+        <h2>Crochet </h2>
+        <a href="pdf/Wendy Cui - Round TWO of Independent Choice Projects .pdf">
+          <img src="image/crochet.png" width="50%" class="crochetPdf" alt="crochet scarf and crochet pumpkin">
+        </a>
+      </div>
+
+      <div>
+        <h2>Origami</h2>
+        <img src="image/ori1.jpg" width=50%" alt="a bouquet of origami flower">
+      </div>
+    </article>
   </body>
 </html>

@@ -1,15 +1,18 @@
 html {
   width: 100%;
+  background-color: #ccd4c46f;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 #header {
   text-align: center;
+  color: #004225;
 }
 
 /*-------------nav links START-------------*/
 .navbar {
   overflow: hidden;
-  background-color: #333;
+  background-color: #82b068;
   font-weight: bold;
 
   display: grid;
@@ -19,7 +22,7 @@ html {
 .navbar a {
   float: left;
   font-size: 16px;
-  color: white;
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -34,7 +37,7 @@ html {
   font-size: 16px;
   border: none;
   outline: none;
-  color: white;
+  color: black;
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
@@ -45,15 +48,15 @@ html {
 
 .navbar a:hover,
 .dropdown:hover .dropbtn {
-  background-color: lightgray;
-  color: black;
+  background-color: #b0cf98;
+  color: white;
 }
 
 .dropdown-content {
   display: none;
   font-weight: bold;
   position: absolute;
-  background-color: #333;
+  background-color: #82b068;
   min-width: 100%;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -69,7 +72,7 @@ html {
 }
 
 .dropdown-content a:hover {
-  background-color: burlywood;
+  background-color: b0cf98;
 }
 
 .dropdown:hover .dropdown-content {
@@ -77,45 +80,46 @@ html {
 }
 /*-------------nav links END*--------------/
 
+/*-------------BACK TO TOP-------------*/
+.backTop {
+  font-size: 15px;
+  box-shadow: inset 0 0 0 0 #426d54;
+  color: #426d54;
+  margin: 0 -0.25rem;
+  padding: 0 0.25rem;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  text-decoration: none;
+}
+.backTop:visited {
+  color: brown;
+}
+.backTop:hover {
+  box-shadow: inset 150px 0 0 0 #426d54;
+  color: white;
+}
+.backTop:active {
+  color: pink;
+}
+
 /*-------------MORE-------------*/
 /*https://css-tricks.com/css-link-hover-effects/*/
 .more {
-  box-shadow: inset 0 0 0 0 #54b3d6;
-  color: #54b3d6;
+  box-shadow: inset 0 0 0 0 #426d54;
+  color: rgb(241, 171, 41);
   margin: 0 -0.25rem;
   padding: 0 0.25rem;
   transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   text-decoration: none;
 }
 .more:hover {
-  box-shadow: inset 100px 0 0 0 #54b3d6;
+  box-shadow: inset 150px 0 0 0 #426d54;
   color: white;
 }
-
 .more:visited {
-  /*NEED to be tested*/
-  color: rgb(211, 211, 90);
+  color: brown;
 }
-
 .more:active {
   color: pink;
-}
-
-/*-------------BACK TO TOP-------------*/
-.backTop a:link {
-  color: rgb(231, 129, 209);
-}
-
-.backTop a:visited {
-  color: #333;
-}
-
-.backTop a:hover {
-  color: blue;
-}
-
-.backTop a:active {
-  color: lightgrey;
 }
 
 /*-------------PROJECTS STRAT-------------*/
@@ -123,15 +127,72 @@ html {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-
-  grid-column-gap: 5px;
-  grid-row-gap: 5px;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
 
   justify-items: center;
 
   margin-right: 20px;
   margin-left: 20px;
   margin-top: 10px;
+
+  font-size: 20px;
 }
 
-/*https://coolors.co/f4d06f-ff8811-9dd9d2-fff8f0-392f5a  color gather*/
+.projectPic {
+  list-style: none;
+}
+
+.aboutme {
+  box-shadow: inset 0 0 0 0 #426d54;
+  color: #426d54;
+  margin: 0 -0.25rem;
+  padding: 0 0.25rem;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  text-decoration: underline;
+}
+.aboutme:hover {
+  box-shadow: inset 150px 0 0 0 #426d54;
+  color: white;
+}
+
+#aboutme {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  margin-top: 10px;
+}
+
+footer {
+  background-image: url("image/wheat_footer.jfif");
+  background-attachment: fixed;
+  background-position: bottom;
+
+  background-size: 50% 28%;
+}
+
+.footer_container {
+  display: flexbox;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.socialM {
+  font-size: 20px;
+  box-shadow: inset 0 0 0 0 #426d54;
+  color: #333;
+  margin: 0 -0.25rem;
+  padding: 0 0.25rem;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  text-decoration: none;
+}
+.socialM:visited {
+  color: brown;
+}
+.socialM:hover {
+  box-shadow: inset 150px 0 0 0 #426d54;
+  color: white;
+}
+.socialM:active {
+  color: pink;
+}
